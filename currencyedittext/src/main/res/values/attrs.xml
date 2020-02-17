@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurrencyEditText">
+        <attr name="currency_symbol" format="string"/>
+        <attr name="currency_locale_tag" format="string"/>
+        <attr name="currency_symbol_hint" format="boolean"/>
+    </declare-styleable>
+</resources>

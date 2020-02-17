@@ -1,0 +1,2 @@
+include ':app', ':currencyedittext'
+rootProject.name='CurrencyEditText'
