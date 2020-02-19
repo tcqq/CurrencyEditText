@@ -8,7 +8,7 @@ publish {
     groupId = 'com.tcqq.android'
     artifactId = 'currencyedittext'
     repoName = 'android'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'Dynamically format EditTexts to take currency inputs.'
     website = 'https://github.com/tcqq/CurrencyEditText'
 }
