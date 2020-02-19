@@ -3,6 +3,7 @@ package com.tcqq.currencyedittext
 import android.os.Build
 import androidx.annotation.RequiresApi
 import java.text.NumberFormat
+import java.text.ParseException
 import java.util.*
 
 internal fun parseMoneyValue(
@@ -19,7 +20,11 @@ internal fun parseMoneyValueWithLocale(
     currencySymbol: String
 ): Number {
     val valueWithoutSeparator = parseMoneyValue(value, groupingSeparator, currencySymbol)
-    return NumberFormat.getInstance(locale).parse(valueWithoutSeparator)!!
+    return try {
+        NumberFormat.getInstance(locale).parse(valueWithoutSeparator)!!
+    } catch (exception: ParseException) {
+        0
+    }
 }
 
 @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
