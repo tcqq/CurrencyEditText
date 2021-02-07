@@ -1,5 +1,5 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
-[ ![Download](https://api.bintray.com/packages/tcqq/android/currencyedittext/images/download.svg?version=1.0.1) ](https://bintray.com/tcqq/android/currencyedittext/1.0.1/link)
+[![JitPack](https://jitpack.io/v/tcqq/CurrencyEditText.svg)](https://jitpack.io/#tcqq/CurrencyEditText)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # CurrencyEditText
@@ -31,13 +31,13 @@ edit_text.getNumericValueBigDecimal()
 #### build.gradle
 ```
 repositories {
-    jcenter()
+    maven { url 'https://jitpack.io' }
 }
 ```
 ```
 dependencies {
-    // Using JCenter
-    implementation 'com.tcqq.android:currencyedittext:1.0.1'
+    // Using JitPack
+    implementation 'com.github.tcqq:CurrencyEditText:1.0.1'
 }
 ```
 
